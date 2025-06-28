@@ -1,0 +1,2 @@
+# bookcover
+scrape book covers
