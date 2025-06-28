@@ -22,7 +22,7 @@ By default, `download_covers.py` comes with a pre-filled `book_id_map`, but you 
 
    ```python
    book_id_map = {
-       "Wildest Dreams (Forbidden Love, #2)": "217068061",
+      "Your Book Title (Series, #X)": "GoodreadsNumericID",
        # add your entries below
    }
 
