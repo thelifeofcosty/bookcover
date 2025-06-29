@@ -1,15 +1,13 @@
-# Use Apify’s Python base image
-FROM apify/python:3.9
+# Use the official Apify Python actor base image
+FROM apify/actor-python:3.9
 
-# Copy all your code into the container
+# Copy everything into the container
 COPY . /usr/src/app
-
-# Switch to that directory
 WORKDIR /usr/src/app
 
-# Install your Python deps
+# Install dependencies
 RUN pip install --upgrade pip \
  && pip install -r requirements.txt
 
-# Run your Python main script
+# Run your Python entrypoint
 CMD ["python3", "main.py"]
