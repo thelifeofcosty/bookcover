@@ -1,0 +1,20 @@
+{
+  "title": "Book Cover Scraper Input",
+  "type": "object",
+  "properties": {
+    "books": {
+      "type": "array",
+      "description": "List of books to download covers for",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string", "title": "Book Title" },
+          "id":    { "type": "string", "title": "Goodreads ID" }
+        },
+        "required": ["title","id"]
+      }
+    }
+  },
+  "required": ["books"],
+  "additionalProperties": false
+}
